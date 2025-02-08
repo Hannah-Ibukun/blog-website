@@ -30,7 +30,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; */
   padding: 20px 40px;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
   height: auto;
 }
 
@@ -38,9 +38,9 @@ nav {
   font-size: 18px;
 }
 
-/* article {
+article {
   margin-bottom: 60px;
-} */
+}
 
 .post-header {
   margin-bottom: 40px;
@@ -130,13 +130,13 @@ div {
   margin-left: 24px;
 }
 
-/* footer p {
+footer p {
   font-size: 16px;
-} */
+}
 
-/*article header p {
+article header p {
   font-style: italic;
-}*/
+}
 
 #author {
   font-style: italic;
@@ -227,7 +227,9 @@ nav a:link:last-child {
   right: 50px;
 }
 
-FLOAT .author-img {
+/* FLOAT  */
+
+.author-img {
   float: left;
   margin-bottom: 20px;
 }

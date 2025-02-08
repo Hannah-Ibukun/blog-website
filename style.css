@@ -2,11 +2,13 @@
   /* Global Reset: This eliminates all margins and paddings. You can style as you desire afterwards. */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
 
 body {
+  /* Declear all color and text property that applies to all the document */
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
@@ -14,6 +16,7 @@ body {
 }
 
 .container {
+  /* Declear with and margin property */
   width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
@@ -27,7 +30,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   height: auto;
 }
 
@@ -35,9 +38,9 @@ nav {
   font-size: 18px;
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -47,7 +50,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -91,7 +94,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -151,7 +154,7 @@ div {
 
 .related {
   list-style: none;
-  margin: 0 auto;
+  margin-left: 0 auto;
 }
 
 li:first-child {
@@ -200,7 +203,9 @@ a:active {
 
 nav a:link {
   display: inline-block;
-  margin-top: 10px;
+  margin-right: 20px;
+  /* margin-top: 10px; */
+
   /* background-color: orangered;
   margin: 20px;
   padding: 20px;
@@ -220,4 +225,48 @@ nav a:link:last-child {
   left: 50px; */
   bottom: 50px;
   right: 50px;
+}
+
+FLOAT .author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav,
+a {
+  margin-right: 30px;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
